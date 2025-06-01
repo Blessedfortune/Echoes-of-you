@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Echoes of You - Proceed Example</title>
+<style>
+  .page { display: none; padding: 20px; font-family: Arial, sans-serif; }
+  .active { display: block; }
+</style>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div id="page1" class="page active">
+  <h1>Echoes of You</h1>
+  <p>Welcome! Ready to start your journey?</p>
+  <button id="nextBtn">Proceed</button>
+</div>
+
+<!-- Page 2 -->
+<div id="page2" class="page">
+  <h2>Chapter 1</h2>
+  <p>Your adventure begins here...</p>
+</div>
+
+<script>
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+  const nextBtn = document.getElementById('nextBtn');
+
+  nextBtn.addEventListener('click', () => {
+    // Hide page 1
+    page1.classList.remove('active');
+    // Show page 2
+    page2.classList.add('active');
+  });
+</script>
+
+</body>
+</html>

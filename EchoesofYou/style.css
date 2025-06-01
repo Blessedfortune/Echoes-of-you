@@ -1,0 +1,49 @@
+body {
+  background: radial-gradient(circle at center, #1a1a2e, #000000);
+  color: #00ffe5;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.tagline {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+button {
+  background: #00ffe5;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #0ff;
+}
+
+.echo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.hidden {
+  display: none;
+}
